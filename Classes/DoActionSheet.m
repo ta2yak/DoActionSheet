@@ -7,6 +7,8 @@
 
 #import "DoActionSheet.h"
 #import "UIImage+ResizeMagick.h"    //  Created by Vlad Andersen on 1/5/13.
+#import <NZCircularImageView.h>
+
 
 #pragma mark - DoAlertViewController
 
@@ -276,12 +278,12 @@
     switch (_nContentMode) {
         case DoContentImage:
         {
-            UIImageView *iv     = nil;
+            NZCircularImageView *iv     = nil;
             if (_iImage != nil)
             {
-                UIImage *iResized = [_iImage resizedImageWithMaximumSize:CGSizeMake(360, 360)];
+                UIImage *iResized = [_iImage resizedImageWithMaximumSize:CGSizeMake(120, 120)];
                 
-                iv = [[UIImageView alloc] initWithImage:iResized];
+                iv = [[NZCircularImageView alloc] initWithImage:iResized];
                 iv.contentMode = UIViewContentModeScaleAspectFit;
                 iv.frame = CGRectMake(DO_BUTTON_INSET.left, DO_BUTTON_INSET.top, iResized.size.width / 2, iResized.size.height / 2);
                 iv.center = CGPointMake(sc.center.x, iv.center.y);

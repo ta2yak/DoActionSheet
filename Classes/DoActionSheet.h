@@ -49,7 +49,7 @@
 #define DO_DESTRUCTIVE_TEXT_COLOR   DO_RGB(255, 255, 255)
 */
 
-// color set 3 -----------------------------------------------------------------------------
+/* color set 3 -----------------------------------------------------------------------------
 #define DO_BACK_COLOR               DO_RGB(232, 229, 222)
 
 // button background color
@@ -59,6 +59,21 @@
 
 // button text color
 #define DO_TITLE_TEXT_COLOR         DO_RGB(95, 74, 50)
+#define DO_BUTTON_TEXT_COLOR        DO_RGB(255, 255, 255)
+#define DO_CANCEL_TEXT_COLOR        DO_RGB(255, 255, 255)
+#define DO_DESTRUCTIVE_TEXT_COLOR   DO_RGB(255, 255, 255)
+*/
+
+// color set of Morks -----------------------------------------------------------------------------
+#define DO_BACK_COLOR               DO_RGBA(255, 255, 255, 0)
+
+// button background color
+#define DO_BUTTON_COLOR             DO_RGB(51, 166, 184)
+#define DO_CANCEL_COLOR             DO_RGB(73, 168, 203)
+#define DO_DESTRUCTIVE_COLOR        DO_RGB(235, 15, 93)
+
+// button text color
+#define DO_TITLE_TEXT_COLOR         DO_RGB(51, 166, 184)
 #define DO_BUTTON_TEXT_COLOR        DO_RGB(255, 255, 255)
 #define DO_CANCEL_TEXT_COLOR        DO_RGB(255, 255, 255)
 #define DO_DESTRUCTIVE_TEXT_COLOR   DO_RGB(255, 255, 255)

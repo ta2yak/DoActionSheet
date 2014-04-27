@@ -13,5 +13,11 @@ Pod::Spec.new do |s|
   s.source_files  = 'Classes/*.{h,m}'
   s.requires_arc = true
   s.dependency 'UIImage-ResizeMagick'
+  s.dependency 'NZCircularImageView'
+
+  s.requires_arc = true
+  s.platform = :ios
+  s.ios.deployment_target = '7.0'
+  
 
 end
